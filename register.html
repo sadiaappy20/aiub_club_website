@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | AIUB Computer Club</title>
+</head>
+<body bgcolor="#99004d" text="#ffffff">
+
+    <center>
+        <p>
+            <a href="index.html"><font color="#ffffff">Home</font></a> | 
+            <a href="about.html"><font color="#ffffff">About Us</font></a> | 
+            <a href="register.html"><font color="#ffffff">Join Club</font></a>
+        </p>
+
+        <hr width="80%">
+
+        <h1>Student Registration</h1>
+        <p>Fill out the form below to join our club community.</p>
+
+        <br>
+
+        <table cellpadding="25" cellspacing="0" width="65%">
+            <tr>
+                <td bgcolor="#ffffff">
+                    <form method="post" action="register.php">
+                        
+                        <fieldset>
+                            <legend><font color="#99004d"><b>Personal Information</b></font></legend>
+                            <table cellpadding="6">
+                                <tr>
+                                    <td><font color="#333333"><label for="fullname">Full Name:</label></font></td>
+                                    <td><input type="text" id="fullname" name="fullname" placeholder="Enter Full Name"></td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333"><label for="sid">Student ID:</label></font></td>
+                                    <td><input type="text" id="sid" name="sid" placeholder="XX-XXXXX-X"></td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333"><label for="email">Email:</label></font></td>
+                                    <td><input type="email" id="email" name="email" placeholder="student@aiub.edu"></td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333"><label for="dob">Date of Birth:</label></font></td>
+                                    <td><input type="date" id="dob" name="dob"></td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333">Gender:</font></td>
+                                    <td>
+                                        <font color="#333333">
+                                            <input type="radio" id="male" name="gender" value="Male">
+                                            <label for="male">Male</label>
+                                            <input type="radio" id="female" name="gender" value="Female">
+                                            <label for="female">Female</label>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333"><label for="photo">ID Card Photo:</label></font></td>
+                                    <td><input type="file" id="photo" name="photo"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <br>
+
+                        <fieldset>
+                            <legend><font color="#99004d"><b>Academic &amp; Preferences</b></font></legend>
+                            <table cellpadding="6">
+                                <tr>
+                                    <td><font color="#333333"><label for="dept">Department:</label></font></td>
+                                    <td>
+                                        <select id="dept" name="dept">
+                                            <option value="">-- Select --</option>
+                                            <option value="CSE">CSE</option>
+                                            <option value="EEE">EEE</option>
+                                            <option value="BBA">BBA</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333">Interested Wing:</font></td>
+                                    <td>
+                                        <font color="#333333">
+                                            <input type="checkbox" id="w1" name="wing" value="Web">
+                                            <label for="w1">Web</label>
+                                            <input type="checkbox" id="w2" name="wing" value="AI">
+                                            <label for="w2">AI</label>
+                                            <input type="checkbox" id="w3" name="wing" value="CP">
+                                            <label for="w3">CP</label>
+                                        </font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333"><label for="address">Address:</label></font></td>
+                                    <td>
+                                        <textarea id="address" name="address" rows="3" cols="25" style="resize:none" placeholder="Your address"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><font color="#333333"><label for="pass">Password:</label></font></td>
+                                    <td><input type="password" id="pass" name="pass"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+
+                        <br>
+
+                        <font color="#333333">
+                            <input type="checkbox" id="terms" name="terms" value="agreed">
+                            <label for="terms">I Agree to Club Rules *</label>
+                        </font>
+
+                        <br><br>
+
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Clear">
+
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+        <hr width="80%">
+        <p><font size="2">&copy; 2026 AIUB Computer Club. All Rights Reserved.</font></p>
+    </center>
+
+</body>
+</html>
